@@ -8,9 +8,10 @@
 /// - Syntax Error
 
 /// WRITE YOUR ANALYSIS HERE
-// 1. Type error = 
-// 2. Reference Error =
-// 3. Range Error = 
+// 1. Type error = Telah Terjadi Kesalah Type. Ini terjadi saat kita menggunakan nilai yang berada di luar kisaran tipe 
+//                 yg diharapkan.
+// 2. Reference Error = Ini terjadi jika kita menggunakan (referensi) variabel yang belum dideklarasikan.
+// 3. Range Error = Ini terjadi jika kita menggunakan angka yang berada di luar rentang nilai ilegal.
 // 4. Syntax Error = kesalahan dalam tata bahasa atau dalam struktur code nya.
 
 /// Soal - 02
@@ -21,7 +22,7 @@
 
 /// WRITE YOUR ANALYSIS HERE
 // 1. akan terjadi error 
-// 2. kategori var const
+// 2. kategori syntax error 
 // 3. karena setelah kita membuat variabel, baru kita bisa kita console di bawah bukan di atas karena variabel scope nya tidak pas
 
 

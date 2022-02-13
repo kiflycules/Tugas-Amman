@@ -1,7 +1,15 @@
 //  nmr 1
-let elemModal = document.querySelector('.modal');
+let elemModal = document.getElementsByClassName('modal fade show');
+let elemModal2 = document.getElementById('detail-article');
+// let elemModal3 = document.ge
+
+
 // nmr 2
-let katalog = document.querySelectorAll('card-text d-none')
+
+let katalog04 = document.getElementsByClassName('card-04');
+
+
+
 // nmr3
 let modalText4 = document.getElementById("modal-text");
 // let title04 = document.getElementById("card-04-title")
