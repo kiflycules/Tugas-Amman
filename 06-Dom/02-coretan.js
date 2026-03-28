@@ -10,32 +10,39 @@ const elBtnSubmit = document.querySelector('#btn-submit');
 const elBtnCancel = document.querySelector('#btn-cancel');
 
 // data baru untuk mengambil nama user dan comment user
-let userName = "";
-let userComment ="";
+const Username = elInputUsername.value;
+const comment = elInputComment.value;
 // let userNameInput = document.getElementById("input-username");
 // let userCommentInput = document.getElementById("input-comment");
 
 // soal-01
-elBtnComment.addEventListener("click", showComm);
-function showComm (){
-    elCommentSection.classList.remove("d-none");
+ const li = document.createElement('li');
+        li.className = "list-group-item d-flex justify-content-between align-items-start"
+        li.innerHTML = "<div class='ms-2 me-auto'>" + "<div class='fw-bold text-capitalize'>"
+                        + Username + "</div>" + comment + "</div>" + "</li>";
+                        elCommentList.appendChild(li);
+                        elCommentList.insertBefore(li, elCommentList.firstChild);
 
-}
+      }
+      event.preventDefault();
+      elBtnSubmit.onclick = addcomment; 
+      elBtnSubmit.addEventListener('click', () => {
+      const elCommentSection = document.getElementById('comment-form-section');
+      if (elBtnSubmit.onclick = addcomment) {
+        elCommentSection.classList.add('d-none');
+        elBtnComment.classList.remove('d-none');
+        elCommentForm.reset();
+      }
+    });
+    }, true);
 
-// soal-02-dan-03
-elCommentForm.addEventListener("submit", function(event){
-    event.preventDefault();
+   elBtnCancel.addEventListener('click', () => {
+    const elCommentSection = document.getElementById('comment-form-section');
+    console.log(elBtnCancel);
+    elCommentSection.classList.add('d-none');
+    elBtnComment.classList.remove('d-none');
+    elCommentForm.reset();
 
-    // const userName = userNameInput.value;
-    // const userComment = userCommentInput.value;
-    // let formatMessage = `(${userName}) ${userComment}`;
-
-
-    // console.log(event);
-    // console.log(userName, userComment);
-    console.log(formatMessage);
-});
-
-// soal-04
+  });
 
 
